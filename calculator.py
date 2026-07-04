@@ -1,5 +1,7 @@
 def add(a, b):
-    return a + b
+    result = a + b
+    print(f"Adding {a} + {b} = {result}")
+    return result
 
 def subtract(a, b):
     return a - b
