@@ -1,4 +1,6 @@
 def add(a, b):
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        raise TypeError("Arguments must be numbers")
     result = a + b
     print(f"Adding {a} + {b} = {result}")
     return result
