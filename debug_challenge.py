@@ -1,7 +1,7 @@
 def find_average(numbers):
     """Calculate the average of a list of numbers."""
     total = 0
-    count = 0
+    count = len(numbers)
     for num in numbers:
         total += num
     return total / count
@@ -12,7 +12,7 @@ def find_max_difference(numbers):
     max_diff = 0
     for i in range(len(numbers)):
         for j in range(len(numbers)):
-            diff = numbers[i] - numbers[j]
+            diff = abs(numbers[i] - numbers[j])
             if diff > max_diff:
                 max_diff = diff
     return max_diff
@@ -25,6 +25,7 @@ def count_above_average(numbers):
     for num in numbers:
         if num > avg:
             count += 1
+    return count
 
 
 if __name__ == "__main__":
