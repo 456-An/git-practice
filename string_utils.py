@@ -1,10 +1,13 @@
+from collections import Counter
+
 def reverse_string(s):
-    print(s.reverse)
+    res_s = s[::-1]
+    return(res_s)
 
 def count_vowels(s):
     s_temp = s.lower()
     counts = Counter(s_temp)
-    print(f"{counts['a']} \n {counts['e']} \n {counts['i']} \n {counts['o']} \n {counts['u']}")
+    return sum(counts[vowel] for vowel in "aeiou")
 
 def is_palindrome(s):
     cleaned = "".join(char.lower() for char in s if char.isalnum())
