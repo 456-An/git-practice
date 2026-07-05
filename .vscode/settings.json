@@ -1,0 +1,27 @@
+{
+    // 存檔時自動格式化
+    "editor.formatOnSave": true,
+
+    // 存檔時自動修正 lint 問題
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit"
+    },
+
+    // 檔案結尾自動加空行（業界慣例）
+    "files.insertFinalNewline": true,
+
+    // 刪除行尾多餘空白
+    "files.trimTrailingWhitespace": true,
+
+    // 括號配對上色（內建功能，比 extension 快）
+    "editor.bracketPairColorization.enabled": true,
+
+    // 顯示括號配對的引導線
+    "editor.guides.bracketPairs": true,
+
+    // Python 相關
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python",
+        "editor.tabSize": 4
+    }
+}
