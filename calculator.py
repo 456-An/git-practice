@@ -10,8 +10,7 @@ def multiply(a: float, b: float) -> float:
 def divide(a: float, b: float) -> float:
     if b == 0:
         raise ZeroDivisionError("division by zero")
-    else:        
-        return a / b
+    return a / b
 
 def power(base: float, exponent: float) -> float:
     return base ** exponent
