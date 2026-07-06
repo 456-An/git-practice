@@ -13,7 +13,7 @@ def multiply(a, b):
 
 def divide(a, b):
     if b == 0:
-        return "Nan"
+        raise ZeroDivisionError("division by zero")
     else:        
         return a / b
 
