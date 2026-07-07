@@ -8,6 +8,7 @@
 - 所有函數必須有 type hints
 - 使用 raise 而不是 return 錯誤字串
 - 不在函數內使用 print
+- 內部工具函數使用 type hints 做型別約束，不需要 isinstance() runtime 型別檢查
 
 ## Git 規範
 遵守業界主流的 commit message 規範叫 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)：
