@@ -1,15 +1,15 @@
 from collections import Counter
 
-def reverse_string(s):
+def reverse_string(s: str) -> str:
     res_s = s[::-1]
     return(res_s)
 
-def count_vowels(s):
+def count_vowels(s: str) -> int:
     s_temp = s.lower()
     counts = Counter(s_temp)
     return sum(counts[vowel] for vowel in "aeiou")
 
-def is_palindrome(s):
+def is_palindrome(s: str) -> bool:
     cleaned = "".join(char.lower() for char in s if char.isalnum())
     return cleaned == cleaned[::-1]
 
